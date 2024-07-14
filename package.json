@@ -1,0 +1,24 @@
+{
+  "name": "webdriverio",
+  "type": "commonjs",
+  "scripts": {
+    "SuiteOneTests": "npx wdio run wdio.conf.js --suite firstsuite",
+    "QARegression": "npx wdio run wdio.conf.js",
+    "UATRegression": "npx wdio run wdio.uat.conf.js",
+    "SuiteTwoTests": "npx wdio run wdio.conf.js --suite secondsuite",
+    "GenerateHTMLRepot" : "allure generate allure-results --clean && allure open"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^8.39.0",
+    "@wdio/cli": "^8.37.0",
+    "@wdio/local-runner": "^8.38.0",
+    "@wdio/mocha-framework": "^8.37.0",
+    "@wdio/spec-reporter": "^8.37.0",
+    "chromedriver": "^126.0.2",
+    "wdio-chromedriver-service": "^8.1.1"
+  },
+  "dependencies": {
+    "chai": "^4.0.1",
+    "chalk": "^2.3.2"
+  }
+}
