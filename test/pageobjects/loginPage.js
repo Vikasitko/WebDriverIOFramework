@@ -1,4 +1,4 @@
-//export class loginPage { OR like below at last step
+//export class loginPage { OR like below at last step ji
 
   class loginPage {
     get userName() {
